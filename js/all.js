@@ -90,7 +90,8 @@ jQuery(document).ready(function($) {
     e.preventDefault();
     $('#taskname')[0].value = "";
     $('#describe')[0].value = "";
-    $('.edit').fadeIn(fade_time*2);
+    $('.edit').delay(fade_time*1.5).fadeIn(fade_time*2);
+    $('.clock').stop(true).fadeOut(fade_time*1.5);
   });
 
   //delbtn按鈕
