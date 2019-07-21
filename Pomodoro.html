@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>Pomodoro</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/all.js" defer></script>
+</head>
+<body>
+  <div class="wrap">
+    <div class="header">
+      <div class="menu">
+        <ul>
+          <li><a id="todo" href="#">To-do list</a></li>
+          <li><a id="analytics" href="#">Analytics</a></li>
+          <li><a id="ring" href="#">Ringtones</a></li>
+        </ul>
+      </div>
+      <div class="starting">
+        <ul>
+          <li><a href="#">Start directly</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="firsttask">
+      <div class="notask">
+        <h2>There’s no task yet.</h2>
+        <button class="firstbtn btn">Add first task</button>
+      </div>
+      <div class="addtask hidden">
+        <form id="addform">
+          <input id="name" type="text" name="addtask" required="required" placeholder=" Name your task">
+          <textarea name="" cols="" rows="5" placeholder=" Describe it"></textarea>
+          <button class="cleanbtn btn" type="reset">Cancel</button>
+          <button class="pinkbtn btn addbtn" type="submit">Done</button>
+        </form>
+      </div>
+    </div>
+    <div class="listpage hidden">
+      <div class="list">
+        <ul id="list">
+          <li><a class="check" href="#"></a><p><a class="task" href="#">Make a Pomodoro one two</a></p><a class="editbtn" href="#"></a><a class="del" href="#"></a>
+            <ul class="dropdown-open">
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </li>
+          <li><a class="check" href="#"></a><p><a class="task" href="#">Make two Pomodoro</a></p><a class="editbtn" href="#"></a><a class="del" href="#"></a>
+            <ul class="dropdown-open">
+              <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
+            </ul></li>
+          <li><a class="plus" href="#"></a><a class="addnt" href="#">Add a New Task</a></li>
+        </ul>
+      </div>
+      <div class="edit hidden">
+        <form>
+          <input id="taskname" type="text" name="addtask" required="required" placeholder=" Name your task">
+          <textarea id="describe" name="" cols="" rows="5" placeholder=" Describe it"></textarea>
+          <button class="cleanbtn btn delbtn">Cancel</button>
+          <button class="pinkbtn btn addbtn" type="submit">Done</button>
+        </form>
+      </div>
+      <div class="clock hidden">
+        <div class="selected">
+          <h1 class="tasktitle"></h1>
+          <h2>Ok, let’s</h2>
+          <button class="startbtn btn">Start</button>
+          <p>Work for <span class="work">25 min</span>　　break for <span class="break">5 min</span></p>
+        </div>
+        <div class="working hidden">
+          <h2>Now, be focused.</h2>
+          <a href="#" class="workpause">Pause</a>
+          <p>or…  <a href="#">Give up</a></p>
+        </div>
+        <div class="onbreak hidden">
+          <h2>Cool. Well done.</h2>
+          <a href="#" class="breakpause">Pause</a>
+          <p>or…  <a href="#">Done</a></p>
+        </div>
+      </div>
+    </div>
+    <div class="analyticscontent hidden">
+      <table>
+        <tr>
+        <th>Today</th>
+        <th>Week</th>
+        </tr>
+        <tr>
+          <td><em>3</em>/tomato</td>
+          <td><em>20</em>/tomato</td>
+        </tr>
+      </table>
+    </div>
+    <div class="ringtonescontent hidden">
+      <div class="workring">
+        <h2><span class="work">Work</span></h2>
+      <ul>
+        <li><a href="#">None</a></li>
+        <li><a href="#">Default</a></li>
+        <li><a href="#">Rock</a></li>
+        <li><a href="#">Pop</a></li>
+        <li><a href="#">Jazz</a></li>
+      </ul>
+      </div>
+      <div class="breakring">
+        <h2><span class="break">Break</span></h2>
+      <ul>
+        <li><a href="#">None</a></li>
+        <li><a href="#">Default</a></li>
+        <li><a href="#">Rock</a></li>
+        <li><a href="#">Pop</a></li>
+        <li><a href="#">Jazz</a></li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
